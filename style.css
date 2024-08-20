@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+.container,
+.contacts,
+.personal-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Theme */
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+h1,
+h2,
+h3,
+p,
+li {
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 36rem;
+  height: 60rem;
+  background-color: var(--Grey-800);
+  padding: 2.4rem;
+  gap: 1.2rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+
+  & .personal-info {
+    gap: 1.2rem;
+    & .image {
+      width: 40%;
+      height: auto;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    & .name {
+      font-size: 2.5rem;
+      margin-top: 1.2rem;
+      font-weight: 700;
+    }
+
+    & .location {
+      color: var(--Green);
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.contacts ul li {
+  display: inline-block;
+  background-color: var(--Grey-700);
+  padding: 1rem 1.6rem;
+  margin: 0.6rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--Green);
+    color: black;
+  }
+}
+/***** Media Queries Section *****/
+@media (width <= 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (width <= 375px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/***** End Media Queries Section *****/
