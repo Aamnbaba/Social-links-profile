@@ -113,7 +113,7 @@ li {
 }
 @media (width <= 375px) {
   html {
-    font-size: 56.25%;
+    font-size: 45%;
   }
 }
 /***** End Media Queries Section *****/
